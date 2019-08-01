@@ -7,7 +7,7 @@ const EntryForm = (props) => (
   <form action="/add" method="post">
     <label>First Name: <input type="text" name="firstName" size="30" required></input></label>
     <label>Last Name: <input type="text" name="lastName" size="30" required></input> </label>
-    <label>Phone Number: <input type="text" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="###-###-####" required></input></label>
+    <label>Phone Number: <input type="text" name="phone" placeholder="###-###-####" required></input></label>
     <label>Email: <input type="email" name="email" required></input></label>
     <label>Position: 
       <select name="position" required>
@@ -46,7 +46,7 @@ const EntryForm = (props) => (
       <option value="16">15+</option>
     </select>
     </label>
-    <label>Bio: <textarea name="bio" rows="10" cols="30"></textarea></label>
+    <label>Bio: <textarea name="introduction" rows="10" cols="30"></textarea></label>
     <input type="Submit" value="Submit"></input>
   </form>
   </div>

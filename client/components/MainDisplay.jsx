@@ -9,10 +9,11 @@ class MainDisplay extends Component {
   }
 
   render () {
+    console.log('props in MainDisplay:', this.props);
     return (
       <div className="container">
         {/* <p>Hello World!</p> */}
-        <MemberDisplay />
+        <MemberDisplay managers={this.props.managers} players={this.props.players} />
         <EntryForm />
       </div>
     )
