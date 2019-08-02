@@ -2,7 +2,7 @@ import React from 'React';
 
 const EntryForm = (props) => (
   // <div>Hello From the Entry Form!</div>
-  <div>
+  <div className="form">
   <h2>New Member Application</h2>
   <form action="/add" method="post">
     <label>First Name: <input type="text" name="firstName" size="30" required></input></label>
@@ -46,7 +46,7 @@ const EntryForm = (props) => (
       <option value="16">15+</option>
     </select>
     </label>
-    <label>Bio: <textarea name="introduction" rows="10" cols="30"></textarea></label>
+    <label>Bio:<textarea name="introduction" rows="10" cols="30"></textarea></label>
     <input type="Submit" value="Submit"></input>
   </form>
   </div>

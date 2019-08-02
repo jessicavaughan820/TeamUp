@@ -11,7 +11,7 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, '../client/assets')))
+app.use(express.static(path.join(__dirname, '../client/assets')));
 app.get('/', (req, res) => res.status(200).sendFile(path.resolve(__dirname, '../index.html')));
 app.get('/build/bundle.js', (req, res) => res.status(200).sendFile(path.resolve(__dirname, '../build/bundle.js')));
 app.post('/add', controllers.addApplicant, (req, res) => res.status(200).redirect('/'));

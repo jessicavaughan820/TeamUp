@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url(https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap);
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+  width: 20%;
+  margin: auto;
+  line-height: 100px;
+}
+
+img {
+  width: 350px;
+  margin: 5px auto;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.playerCard {
+  padding: 15px;
+  margin: 5px;
+  box-shadow: 2px 2px grey;
+  border: 1px solid black;
+  display: inline-grid;
+  min-height: 500px;
+}
+
+.managerCard {
+  padding: 15px;
+  margin: 5px;
+  box-shadow: 2px 2px grey;
+  border: 1px solid black;
+  min-height: 500px;
+}
+
+.form {
+  border: 1px solid black;
+  box-shadow: 2px 2px grey;
+  padding: 15px;
+  margin: 5px;
+}
+
+.form h2 {
+  width: 20%;
+  margin: auto;
+}
+
+.form label {
+  display: block;
+}
+
+form {
+  min-height: 500px;
+}
+
+label {
+  font-size: 1.5em;
+  font-color: rgb(29, 29, 29);
+}
+
+textarea {
+  display: block;
+}

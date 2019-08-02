@@ -13,6 +13,7 @@ class MainDisplay extends Component {
     return (
       <div className="container">
         {/* <p>Hello World!</p> */}
+        <h1>LAFC</h1>
         <MemberDisplay managers={this.props.managers} players={this.props.players} />
         <EntryForm />
       </div>
