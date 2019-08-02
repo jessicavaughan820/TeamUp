@@ -47,10 +47,10 @@ img {
   margin: 5px;
 }
 
-.form h2 {
+/* .form h2 {
   width: 20%;
   margin: auto;
-}
+} */
 
 .form label {
   display: block;
@@ -67,4 +67,22 @@ label {
 
 textarea {
   display: block;
+}
+
+input {
+  margin: 5px;
+}
+
+select {
+  margin: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: grey;
+  margin-left: 0px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(102, 101, 101);
 }

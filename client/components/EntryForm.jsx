@@ -47,7 +47,7 @@ const EntryForm = (props) => (
     </select>
     </label>
     <label>Bio:<textarea name="introduction" rows="10" cols="30"></textarea></label>
-    <input type="Submit" value="Submit"></input>
+    <input type="submit" value="Submit"></input>
   </form>
   </div>
 
