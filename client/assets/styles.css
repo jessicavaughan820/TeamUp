@@ -11,6 +11,7 @@ h1 {
   width: 20%;
   margin: auto;
   line-height: 100px;
+  align-content: center;
 }
 
 img {
@@ -81,6 +82,7 @@ input[type="submit"] {
   padding: 10px 20px;
   background-color: grey;
   margin-left: 0px;
+  border-radius: 3px;
 }
 
 input[type="submit"]:hover {
