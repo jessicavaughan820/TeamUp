@@ -1,6 +1,7 @@
-const path = require('path');
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 
 const controllers = require('./controllers/event-controller.js');
 
@@ -8,16 +9,40 @@ const app = express();
 
 const PORT = 3000;
 
+// parse the request body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, '../client/assets')));
+// parse cookies
+app.use(cookieParser());
+
+// serve static files
+app.use(express.static(path.resolve(__dirname, '../client/assets')));
+app.use(express.static(path.resolve(__dirname, '../build/bundle.js')));
+
+// base route
 app.get('/', (req, res) => res.status(200).sendFile(path.resolve(__dirname, '../index.html')));
-app.get('/build/bundle.js', (req, res) => res.status(200).sendFile(path.resolve(__dirname, '../build/bundle.js')));
+
+// route to add registrants
 app.post('/add', controllers.addApplicant, (req, res) => res.status(200).redirect('/'));
+
+// catchall route
+app.use('*', (req, res) => {
+  res.status(404).send('Path not found');
+});
+
+// global error handler
+app.use((err, res, next) => {
+  const defaultErr = {
+    log: 'Express error handler caught unknown middleware handler',
+    status: 400,
+    message: { err: 'An error occured' },
+  };
+  const errorObj = { ...defaultErr, ...err };
+  console.log(errorObj.log);
+  return res.status(errorObj.status).json(errorObj.message);
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
 });
-
-module.exports = app;
