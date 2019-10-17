@@ -9,9 +9,9 @@
 4) type `npm install` in the command line
 5) type `npm run build` in the command line
 6) create a .env file in the root directory
-6) create a variable named **uriString** and set it to the value of your database uri in the .env file
-7) run `npm start` in the command line to start the server
-8) navigate to your browser and open http://localhost:3000
+7) create a variable named **uriString** and set it to the value of your database uri in the .env file
+8) run `npm start` in the command line to start the server
+9) navigate to your browser and open http://localhost:3000
 
 #### How to run tests
 1) type `npm run test` from the command line
