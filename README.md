@@ -1,4 +1,4 @@
-### A short page to facilitate community sports engagement
+### TeamUp: A short page to facilitate community sports engagement
 
 Screenshots
 
