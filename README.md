@@ -1,6 +1,4 @@
-# soccer-league-team
-## Summary
-### A short page to provide information and registration for a soccer team
+### A short page to facilitate community sports engagement
 
 Screenshots
 
