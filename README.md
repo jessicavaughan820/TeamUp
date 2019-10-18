@@ -14,7 +14,8 @@
 9) navigate to your browser and open http://localhost:3000
 
 #### How to run tests
-1) type `npm run test` from the command line
+1) run `npm start` to start server
+2) type `npm run test` from the command line
 
 
 

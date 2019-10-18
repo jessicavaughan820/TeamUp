@@ -1,4 +1,4 @@
-const db = require('../models/database');
+const db = require('../db/connection');
 
 const fileController = {};
 
