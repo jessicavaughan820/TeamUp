@@ -1,7 +1,6 @@
 import React from 'React';
 
 const PlayerCard = (props) => (
-  // console.log("PlayerCard:", props)
   <div className="playerCard">
     <img src={props.img} />
     <h4>Position: {props.position}</h4>

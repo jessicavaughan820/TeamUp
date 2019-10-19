@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // serve static files
-app.use(express.static(path.resolve(__dirname, '../client/assets')));
-app.use(express.static(path.resolve(__dirname, '../build/bundle.js')));
+app.use('/assets/', express.static(path.resolve(__dirname, '../client/assets/')));
+app.use('/build/', express.static(path.resolve(__dirname, '../build/')));
 
 // base route
 app.get('/', (req, res) => res.status(200).sendFile(path.resolve(__dirname, '../index.html')));

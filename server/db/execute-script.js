@@ -15,7 +15,7 @@ pool.connect((err, client, done) => {
   }
   client.query(sql, (scriptErr) => {
     done();
-    if (scriptErr) console.log(scriptErr);
+    if (scriptErr) console.log('error in sql file', scriptErr);
   });
 });
 
