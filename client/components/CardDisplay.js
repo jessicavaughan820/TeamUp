@@ -5,9 +5,7 @@ import PlayerCard from './PlayerCard';
 const CardDisplay = (props) => {
   const managers = [];
   for (let i = 0; i < props.managers.length; i++) {
-    console.log('managers populated');
     managers.push(<ManagerCard img={props.managers[i].img} firstName={props.managers[i].firstName} lastName={props.managers[i].lastName} bio={props.managers[i].bio} key={'manager' + i} />);
-    console.log('array', managers, 'properties', props.managers);
   }
   
   const players = [];
