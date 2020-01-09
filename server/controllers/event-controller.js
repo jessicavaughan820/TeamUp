@@ -3,12 +3,12 @@ const db = require('../db/connection');
 const fileController = {};
 
 fileController.addApplicant = (req, res, next) => {
-  const { firstName, lastName, phone, email, position, experience, bio } = req.body;
+  const { firstName, lastName, phone, email, position, experience, message } = req.body;
   // setting the default value to false on the server side to avoid potential tampering on the client side
   const on_team = 0;
 
   const queryText = 'INSERT INTO players (first_name, last_name, email, phone, position, years_experience, on_team, bio) VALUES($1, $2, $3, $4, $5, $6, $7, $8)';
-  const values = [firstName, lastName, email, phone, position, experience, on_team, bio];
+  const values = [firstName, lastName, email, phone, position, experience, on_team, message];
 
   db.query(queryText, values, (err, result) => {
     if (err) {
