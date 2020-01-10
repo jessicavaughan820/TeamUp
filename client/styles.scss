@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo:400|Poppins:400');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+$bgColor: #EFEFEF;
+$primaryColor: #A59D93;
+$secondaryColor:#A6620E;
+$textColor: #2C2C2C;
+$errorColor:#D1345B;
+$lightColor:#FFFFFF;
+
+$boxShadow: 2px 2px $primaryColor;
+$border: 2px solid $textColor;
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: $textColor;
+  margin: 0;
+  padding: 0;
+  background-color: $bgColor;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Baloo', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h2 {font-size: 2.441em;}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $secondaryColor;
+  color: $lightColor;
+  font-family: 'Baloo', sans-serif;
+  border-bottom: $border;
+  padding: 1.5em;
+
+  h1 {
+    margin: 0;
+    font-size: 3.052em;
+  }
+
+  a {
+    color: $lightColor;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+} // ends header styling
+
+#image-viewer {
+  
+  margin-bottom: 1.15rem;
+  
+  img {
+    width: 100%;
+    border-bottom: $border;
+  }
+} // ends image-viewer styling
+
+#about-container {
+  margin-bottom: 1.15rem;
+  margin-left: 1em;
+  margin-right: 1em;
+
+  p {
+    
+  }
+}
+
+
+#team {
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+
+  .manager-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondaryColor;
+    margin-bottom: 1.15rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px grey;
+    border: 1px solid black;
+
+    img {
+      vertical-align: middle;
+      margin: 1.15rem;
+      border-radius: 5px;
+    }
+
+    .info {
+      margin: 0 1.15rem;
+    }
+  }
+
+  #players {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 1.15rem;
+  }
+
+  .player-card {
+    padding: 15px;
+    margin: 5px;
+    box-shadow: 2px 2px grey;
+    border: 1px solid black;
+    background-color: $secondaryColor;
+    border-radius: 5px;
+
+    .player-card-header {
+      display: flex;
+      justify-content: space-evenly;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+} // ends team grid display
+
+#signup-section {
+  background-color: $primaryColor;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+#sign-up {
+  border: $border;
+  box-shadow: $boxShadow;
+  padding: 2.5em 2em;
+  width: 50%;
+  margin: 2em auto;
+  background-color: $bgColor;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+
+  h2 {
+    text-align: center;
+    align-self: center;
+  }
+
+  form {
+    padding: 0 5em;
+  }
+
+  label {
+    display: block;
+    font-size: 1.5em;
+    color: rgb(29, 29, 29);
+  }
+
+  textarea {
+    display: block;
+  }
+
+  input {
+    margin: 5px;
+  }
+
+  select {
+    margin: 5px;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: grey;
+    margin-left: 0px;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(102, 101, 101);
+  }
+} // ends form display
+
+#footer {
+  background-color: $secondaryColor;
+  color: $lightColor;
+  padding: 1em 0;
+  text-align: center;
+  border-top: $border;
+}
+
+#signup-message {
+  text-align: center;
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Baloo', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  font-size: 1.953em;
+}
