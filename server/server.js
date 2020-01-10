@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // serve static files
-app.use('/assets/', express.static(path.resolve(__dirname, '../client/assets/')));
+app.use('/assets/', express.static(path.resolve(__dirname, '../assets/')));
 app.use('/build/', express.static(path.resolve(__dirname, '../build/')));
 
 // base route
