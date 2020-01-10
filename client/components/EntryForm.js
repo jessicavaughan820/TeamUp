@@ -1,8 +1,10 @@
 import React from 'react';
 
 const EntryForm = (props) => (
+  <div id='signup-section'>
   <div id="sign-up">
   <h2>Sign Up To Play!</h2>
+  <div id='form-section'>
   <form action="/add" method="post">
     <label>First Name: <input type="text" name="firstName" size="30" required></input></label>
     <label>Last Name: <input type="text" name="lastName" size="30" required></input> </label>
@@ -48,6 +50,8 @@ const EntryForm = (props) => (
     <label>Message to the organizers:<textarea name="message" rows="10" cols="50"></textarea></label>
     <input type="submit" value="Submit" onClick={() => props.handleClick()}></input>
   </form>
+  </div>
+  </div>
   </div>
 );
 

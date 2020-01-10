@@ -6,10 +6,9 @@ const ManagerCard = (props) => {
       <div className='image'>
         <img src={props.img} alt={props.firstName + props.lastName} />
       </div>
-      <div id="info">
-        <h4>Manager</h4>
-        <p>{props.firstName} {props.lastName}</p>
-        <p>Bio: {props.bio}</p>
+      <div className="info">
+        <h4>{props.firstName} {props.lastName}</h4>
+        <p>{props.bio}</p>
       </div>
   </div>
   )
