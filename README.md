@@ -2,13 +2,13 @@
 
 #### Screenshots
 
-![Application image](./screenshots/hompage1.png)
+![Application image](/screenshots/hompage1.png)
 
-![Application image](./screenshots/hompage2.png)
+![Application image](/screenshots/hompage2.png)
 
-![Application image](./screenshots/hompage3.png)
+![Application image](/screenshots/hompage3.png)
 
-![Application image](./screenshots/hompage4.png)
+![Application image](/screenshots/hompage4.png)
 
 
 #### How to get started
