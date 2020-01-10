@@ -1,7 +1,7 @@
 import React from 'react';
 
 const EntryForm = (props) => (
-  <div className="sign-up">
+  <div id="sign-up">
   <h2>Sign Up To Play!</h2>
   <form action="/add" method="post">
     <label>First Name: <input type="text" name="firstName" size="30" required></input></label>

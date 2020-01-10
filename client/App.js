@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       isRegistered: false,
-      images: [],
+      images: ["assets/main.jpg"],
       aboutText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu dui. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Ac turpis egestas sed tempus urna. Mauris commodo quis imperdiet massa tincidunt. Vitae auctor eu augue ut lectus arcu bibendum. Adipiscing diam donec adipiscing tristique risus nec feugiat. Lectus quam id leo in vitae turpis massa sed elementum. Molestie nunc non blandit massa enim nec dui nunc mattis. Massa tincidunt dui ut ornare lectus sit amet est. Eu turpis egestas pretium aenean pharetra. Malesuada fames ac turpis egestas integer. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Luctus venenatis lectus magna fringilla urna. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Sit amet luctus venenatis lectus magna fringilla urna. Convallis aenean et tortor at risus viverra. Neque viverra justo nec ultrices dui sapien eget mi proin. Libero enim sed faucibus turpis in.',
       managers: [
         { 

@@ -14,9 +14,11 @@ const CardDisplay = (props) => {
   }
   
   return (
-    <div className="team">
+    <div id="team">
       {managers}
-      {players}
+      <div id='players'>
+        {players}
+      </div>
     </div>
   )
 }
