@@ -10,7 +10,9 @@ $lightColor:#FFFFFF;
 
 $boxShadow: 2px 2px $primaryColor;
 $border: 2px solid $textColor;
+$borderRadius: 5px;
 
+/* ******************** global styles ******************* */
 html {font-size: 100%;} /*16px*/
 
 body {
@@ -37,8 +39,7 @@ h3 {font-size: 1.953em;}
 h4 {font-size: 1.563em;}
 
 h5 {font-size: 1.25em;}
-
-small, .text_small {font-size: 0.8em;}
+/* ******************************* end global styles ******************** */
 
 #header {
   display: flex;
@@ -63,7 +64,6 @@ small, .text_small {font-size: 0.8em;}
 } // ends header styling
 
 #image-viewer {
-  
   margin-bottom: 1.15rem;
   
   img {
@@ -76,12 +76,7 @@ small, .text_small {font-size: 0.8em;}
   margin-bottom: 1.15rem;
   margin-left: 1em;
   margin-right: 1em;
-
-  p {
-    
-  }
 }
-
 
 #team {
   padding: 0 1em;
@@ -101,7 +96,7 @@ small, .text_small {font-size: 0.8em;}
     img {
       vertical-align: middle;
       margin: 1.15rem;
-      border-radius: 5px;
+      border-radius: $borderRadius;
     }
 
     .info {
@@ -123,14 +118,14 @@ small, .text_small {font-size: 0.8em;}
     box-shadow: 2px 2px grey;
     border: 1px solid black;
     background-color: $secondaryColor;
-    border-radius: 5px;
+    border-radius: $borderRadius;
 
     .player-card-header {
       display: flex;
       justify-content: space-evenly;
 
       img {
-        border-radius: 5px;
+        border-radius: $borderRadius;
       }
     }
   }
@@ -149,7 +144,7 @@ small, .text_small {font-size: 0.8em;}
   width: 50%;
   margin: 2em auto;
   background-color: $bgColor;
-  border-radius: 5px;
+  border-radius: $borderRadius;
   display: flex;
   justify-content: space-around;
 
